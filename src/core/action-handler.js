@@ -169,8 +169,8 @@ class ActionHandler {
 
       case 'RESET_SPEED': {
         window.VSC.logger.info('Resetting speed');
-        const preferredSpeed = this.config.getKeyBinding('fast') || 1.0;
-        this.adjustSpeed(video, preferredSpeed, { source: 'internal' });
+        const resetSpeed = this.config.getKeyBinding('reset') || 1.0;
+        this.adjustSpeed(video, resetSpeed, { source: 'internal' });
         break;
       }
 
